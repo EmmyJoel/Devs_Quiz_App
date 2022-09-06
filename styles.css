@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgb(148, 5, 129), rgb(1, 46, 247), rgb(148, 5, 129));
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-btn,
+.info-box,
+.quiz-box,
+.result-box {
+    position: absolute;
+    /* top:50%;
+    left:50%; */
+    /* transform: translate(-50%, -50%); */
+    box-shadow: 0px 5px 5px rgb(11, 13, 20),
+        0px -4px 5px rgb(11, 13, 20);
+}
+
+.start-btn button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(1, 46, 247);
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgb(11, 13, 20),
+        0px 2px 5px rgb(11, 13, 20),
+        0px 0px 50px #fff;
+    transition: all .2s ease;
+}
+
+.start-btn button:hover {
+    color: rgb(148, 5, 129);
+    box-shadow: 0px 2px 10px rgb(11, 13, 20),
+        0px 2px 50px rgb(151, 172, 248),
+        0px 2px 50px #fff;
+}
+
+
+/* Quiz Info Box */
+
+.info-box {
+    background-color: #fff;
+    width: 500px;
+    border-radius: 8px;
+    display: none;
+}
+
+
+.info-box .info-title {
+    border-bottom: 1px solid rgb(187, 180, 180);
+    width: 100%;
+    padding: 15px 20px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(1, 46, 247)
+}
+
+.info-list {
+    padding: 15px 25px;
+}
+
+.info-list .info {
+    margin: 6px 0px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.info-list .info span {
+    font-weight: 600;
+    font-size: 17px;
+    color: rgb(1, 46, 247);
+}
+
+.info-box .buttons {
+    border-top: 1px solid rgb(187, 180, 180);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.buttons button {
+    margin: 0px 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: rgb(1, 46, 247);
+    border-radius: 5px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.buttons button.quit {
+    background-color: rgb(236, 238, 243);
+    color: rgb(1, 46, 247);
+    border: 1px solid rgb(1, 46, 247);
+
+}
+
+.buttons button.quit:hover {
+    background-color: rgb(148, 5, 129);
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.buttons button.restart {
+    border: 1px solid rgb(97, 95, 102);
+}
+
+.buttons button.restart:hover {
+    background-color: rgb(148, 5, 129);
+}
+
+.quiz-box {
+    background-color: white;
+    width: 520px;
+    border-radius: 8px;
+    display: none;
+}
+
+.quiz-box header {
+    background-color: white;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 2px 5px 1px rgb(187, 180, 180);
+}
+
+.quiz-box header .title {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(1, 46, 247);
+}
+
+.quiz-box header .timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(1, 46, 247, 0.562);
+    background-color: rgb(187, 180, 180);
+}
+
+.timer .time-text {
+    font-size: 14px;
+    font-weight: 600;
+    user-select: none;
+}
+
+.timer .time {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(112, 109, 112);
+    user-select: none;
+    padding: 2px 8px;
+    border-radius: 8px;
+}
+
+.quiz-box section {
+    padding: 25px 25px;
+}
+
+section .q-text {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+section .option-list {
+    padding: 20px 0px;
+    display: block;
+}
+
+section .option {
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgba(215, 225, 255, 0.808);
+    margin-bottom: 10px;
+    padding: 12px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(1, 46, 247, 0.562);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s ease;
+    box-sizing: border-box;
+}
+
+section .option:hover {
+    background-color: rgba(203, 174, 230, 0.808);
+    border: 1px solid transparent;
+}
+
+section .option:last-child {
+    margin-bottom: 0px;
+}
+
+.option .icon {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 0px 2px;
+    box-sizing: border-box;
+}
+
+.option .icon.tick {
+    color: rgb(4, 180, 4);
+    border: 1px solid rgb(4, 180, 4);
+    background-color: white;
+}
+
+.option .icon.cross {
+    color: rgb(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgba(252, 166, 166, 0.658);
+    padding: 0px 5px;
+}
+
+.quiz-box footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px 20px;
+}
+
+footer .total-q span {
+    display: flex;
+    user-select: none;
+}
+
+footer .total-q span p {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+footer .total-q span p:first-child {
+    padding-left: 0px;
+}
+
+footer .next-btn {
+    padding: 5px 20px;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(1, 46, 247);
+    border: 1px solid rgb(1, 46, 247);
+    transition: all .1s ease;
+}
+
+footer .next-btn:hover {
+    background-color: rgb(7, 32, 145);
+}
+
+footer .next-btn:after {
+    content: ' \023E9';
+}
+
+.result-box {
+    background-color: #fff;
+    width: 400px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+.result-box .icon {
+    font-size: 100px;
+    border: 1px solid;
+    padding: 50px;
+    margin: 10px 0px;
+    color: yellow;
+}
+
+.result-box .complete-msg {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.result-box .score-msg {
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    margin: 10px 0px;
+}
+
+.result-box .score-msg p {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0px 4px;
+}
+
+.result-box .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.result-box .buttons button {
+    padding: 8px 10px;
+    border: 1px solid rgb(1, 46, 247);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Media queries */
+
+@media screen and (max-width:600px) and (min-width:300px) {
+    .info-box {
+        width: 90%;
+        max-width: 400px;
+        border-radius: 8px;
+    }
+
+
+    .info-box .info-title {
+        font-weight: 600;
+        font-size: calc(100%);
+        letter-spacing: 0px;
+    }
+
+    .info-list {
+        padding: 10px 15px;
+    }
+
+    .info-list .info {
+        margin: 5px 0px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .info-list .info span {
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .buttons {
+        justify-content: space-evenly;
+    }
+
+    .buttons button {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 5px 10px;
+    }
+
+    .quiz-box {
+        width: 95%;
+    }
+
+    .quiz-box header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .quiz-box header .title {
+        font-size: 22px;
+        width: 100%;
+        margin: 0px 0px 5px;
+    }
+
+    .quiz-box header .timer {
+        align-self: flex-end;
+        text-align: center;
+        width: max-content;
+        border-radius: 10px;
+        padding-right: 0px;
+    }
+
+    .timer .time-text {
+        font-size: 13px;
+        margin: 0px 4px 0px 0px;
+    }
+
+    .timer .time {
+        font-size: 17px;
+        background-color: rgb(10, 9, 10);
+        border-radius: 10px;
+    }
+
+    section .q-text {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+
+    section .option-list {
+        padding: 20px 0px;
+        display: block;
+    }
+}
+
+/* For smaller devices */
+
+@media screen and (max-width:270px) {
+    .info-box {
+        width: 90%;
+        max-width: 400px;
+        border-radius: 8px;
+    }
+
+
+    .info-box .info-title {
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+
+    .info-list {
+        padding: 10px 15px;
+    }
+
+    .info-list .info {
+        margin: 5px 0px;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .info-list .info span {
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+    }
+
+    .buttons button {
+        width: 60%;
+        margin: 5px 0px;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 5px 10px;
+    }
+
+    .quiz-box {
+        width: 95%;
+    }
+
+    .quiz-box header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quiz-box header .title {
+        font-size: 20px;
+        width: 100%;
+        margin: 0px 0px 10px;
+        text-align: center;
+    }
+
+    .quiz-box header .timer {
+        text-align: center;
+        width: max-content;
+        border-radius: 10px;
+        padding-right: 0px;
+    }
+
+    .timer .time-text {
+        font-size: 13px;
+        margin: 0px 4px 0px 0px;
+    }
+
+    .timer .time {
+        font-size: 17px;
+        background-color: rgb(10, 9, 10);
+        border-radius: 10px;
+    }
+
+    .quiz-box footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px 20px;
+    }
+
+    section .option-list {
+        padding: 20px 0px 0px;
+    }
+
+    footer .next-btn {
+        margin: 10px 0px 0px;
+    }
+}

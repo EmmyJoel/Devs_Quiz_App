@@ -1,0 +1,96 @@
+// 1. You will only have <span>15 seconds</span> per each  question.
+// 2. Once you select your answer, you can't reselect.
+// 3. You can't select an option once time goes off.
+// 4. You can't exit from the Quiz once you're playing.
+// 5. Points are awarded on the basis of your coreect answers.
+
+// Choose the correct HTML elemnent for the largest heading?
+// &ltheader&gt 
+// &lth2&gt 
+// &ltheading&gt 
+// &lth4&gt 
+
+// Which character is used to indicate an end tag? 
+// ^
+// /
+// *
+// <
+
+// Inline elements are normally displayed without starting a new line.
+// True
+// False
+
+// How can you make a numbered list?
+// &ltdl&gt
+// &ltol&gt
+// &ltul&gt
+// &ltlist&gt
+
+// What is the correct HTML for a drop-down list?
+// &ltinput type="dropdown"&gt
+// &ltselect&gt
+// &ltlist&gt
+// &ltinput style="dropdown"&gt
+
+// What does CSS stand for?
+// Cascading Styles Sheet
+// Creative Style Sheets
+// Colorful Style Sheets
+// Cascading Style Sheets
+
+// Where in an HTML document is the correct place to link to an external style sheet?
+// In the &ltheading&gt section 
+// In the &ltbody&gt section
+// In the &lthead&gt section
+// In the &ltheader&gt section
+
+// Which of the following HTML tag is used to define an internal styling?
+// &ltcss&gt 
+// &ltstyling&gt 
+// &ltstyle&gt 
+// &ltstylesheet&gt 
+
+// Which HTML attribute is used to define inline styles?
+// styles
+// styling
+// style
+// stylesheet
+
+// Which CSS property is used to change the text color of an alement?
+// text-color
+// font-color
+// color
+// color-text
+
+// Inside which HTML element do we put the JavaScript?
+// &ltscripts&gt
+// &ltJavaScript&gt
+// &ltScript&gt
+// &ltScripting&gt
+
+// Where is the correct place to insert a JavaScript?
+// The &ltbody&gt section
+// The &lthead&gt section
+// Both
+
+// What is the correct syntax for referring to an external script called "abc.js"?
+// &ltscript class="abc.js"&gt 
+// &ltscript href="abc js"&gt 
+// &ltscript src="abc.js"&gt
+// &ltlink script="abc.js"&gt
+
+// The external javaScript file must contain the &ltscript&gt tag
+// True
+// False
+
+// How do you create a function in JavaScript?
+// function = myFunction()
+// function myFunction()
+// function:myFunction()
+// funtion {myFunction}
+
+// How to write an IF statement in JavaScript?
+// if i == 5, then
+// if i = 5
+// if(i == 5)
+// if i = 5 then
