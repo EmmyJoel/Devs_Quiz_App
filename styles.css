@@ -22,25 +22,27 @@ body {
 .quiz-box,
 .result-box {
     position: absolute;
-    /* top:50%;
-    left:50%; */
-    /* transform: translate(-50%, -50%); */
-    box-shadow: 0px 5px 5px rgb(11, 13, 20),
-        0px -4px 5px rgb(11, 13, 20);
+    box-shadow: 0px 3px 5px rgb(11, 13, 20),
+        0px -2px 5px rgb(11, 13, 20);
 }
 
+.start-btn{
+    background-color: #fff;
+    border-radius:6px;
+}
 .start-btn button {
+    display:none;
     padding: 10px 20px;
     border: none;
     outline: none;
-    border-radius: 7px;
+    border-radius: 6px;
     font-size: 18px;
     font-weight: 700;
+    background-color:#fff;
     color: rgb(1, 46, 247);
     cursor: pointer;
-    box-shadow: 0px 0px 5px rgb(11, 13, 20),
-        0px 2px 5px rgb(11, 13, 20),
-        0px 0px 50px #fff;
+    box-shadow: 0px 0px 10px rgb(3, 56, 247),
+        0px 0px 100px rgb(221, 79, 250);
     transition: all .2s ease;
 }
 
@@ -134,7 +136,7 @@ body {
     background-color: white;
     width: 520px;
     border-radius: 8px;
-    display: none;
+    /* display: none; */
 }
 
 .quiz-box header {
@@ -427,7 +429,7 @@ footer .next-btn:after {
 
 /* For smaller devices */
 
-@media screen and (max-width:270px) {
+@media screen and (max-width:300px) {
     .info-box {
         width: 90%;
         max-width: 400px;
