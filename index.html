@@ -12,7 +12,7 @@
 
 <body>
     <!-- start quiz button -->
-    <div class="start-btn"><button>Start Quiz</button></div>
+    <div class="start-btn"><button onclick="infoActive()">Start Quiz</button></div>
 
     <div class="info-box">
         <div class="info-title">
@@ -27,8 +27,8 @@
             <div class="info">5. Points are awarded on the basis of your corect answers.</div>
         </div>
         <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
+            <button class="quit" onclick="infoRemove()">Exit Quiz</button>
+            <button class="restart" onclick="quizActive()">Continue</button>
         </div>
     </div>
 
@@ -70,7 +70,7 @@
         <footer>
             <div class="total-q">
                 <span>
-                    <p>2</p>of<p>5</p>Questions
+                    <p>2</p>of<p>16</p>Questions
                 </span>
             </div>
             <button class="next-btn">Next</button>
@@ -92,5 +92,6 @@
             <button class="quit">Quit Quiz</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 

@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(148, 5, 129), rgb(1, 46, 247), rgb(148, 5, 129));
+    background-image: linear-gradient(rgb(60, 14, 70), rgb(1, 46, 247), rgb(60, 14, 70));
     height: 100vh;
     width: 100%;
     position: relative;
@@ -31,7 +31,6 @@ body {
     border-radius:6px;
 }
 .start-btn button {
-    display:none;
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -63,6 +62,10 @@ body {
     display: none;
 }
 
+.info-box.active, 
+.quiz-box.active{
+    display:unset;
+}
 
 .info-box .info-title {
     border-bottom: 1px solid rgb(187, 180, 180);
@@ -136,7 +139,7 @@ body {
     background-color: white;
     width: 520px;
     border-radius: 8px;
-    /* display: none; */
+    display: none;
 }
 
 .quiz-box header {
@@ -189,11 +192,11 @@ body {
 section .q-text {
     font-size: 20px;
     font-weight: 700;
-    letter-spacing: -1px;
+    letter-spacing:-1px;
 }
 
 section .option-list {
-    padding: 20px 0px;
+    padding: 20px 0px 5px;
     display: block;
 }
 
@@ -202,7 +205,7 @@ section .option {
     font-weight: 500;
     background-color: rgba(215, 225, 255, 0.808);
     margin-bottom: 10px;
-    padding: 12px 10px;
+    padding: 15px 10px;
     border-radius: 5px;
     border: 1px solid rgba(1, 46, 247, 0.562);
     display: flex;
@@ -278,11 +281,11 @@ footer .next-btn {
 }
 
 footer .next-btn:hover {
-    background-color: rgb(7, 32, 145);
+    background-color: rgb(63, 12, 202);
 }
 
 footer .next-btn:after {
-    content: ' \023E9';
+    content: " \023E9";
 }
 
 .result-box {
