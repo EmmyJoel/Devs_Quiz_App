@@ -228,21 +228,25 @@ section .option:last-child {
 .option .icon {
     border: 1px solid transparent;
     border-radius: 50%;
-    padding: 0px 2px;
     box-sizing: border-box;
+    display:flex;
+    align-items: center;
 }
 
 .option .icon.tick {
     color: rgb(4, 180, 4);
     border: 1px solid rgb(4, 180, 4);
     background-color: white;
+    padding:0px 3px;
+    block-size: 23px;
 }
 
 .option .icon.cross {
     color: rgb(255, 0, 0);
     border: 1px solid rgb(255, 0, 0);
     background-color: rgba(252, 166, 166, 0.658);
-    padding: 0px 5px;
+    padding:0px 5px;
+    block-size: 23px;
 }
 
 .quiz-box footer {
