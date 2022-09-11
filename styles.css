@@ -35,11 +35,11 @@ body {
 .welcome {
     background-color: rgba(255, 255, 255, 0.808);
     border-radius: 50px 0px 50px 0px;
-    padding: 20px 10px 10px;
+    padding: 20px;
     box-shadow: 0px 0px 5px rgb(62, 137, 250),
     0px 0px 40px rgb(226, 106, 250);
-    width:480px;
-    height:300px;
+    width:500px;
+    min-height:300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,7 +51,7 @@ body {
 }
 
 .welcome .message {
-    font-size: 18px;
+    font-size:20px;
     text-align: center;
     font-weight: 600;
 }
@@ -60,6 +60,16 @@ body {
     color: rgb(1, 46, 247);
     font-size: 20px;
     font-weight: 700;
+}
+
+.welcome .message .page-name{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-shadow:0px 2px 3px rgb(0, 0, 0), 
+                0px 2px 3px rgb(0, 0, 0), 
+                0px 2px 3px rgb(0, 0, 0),
+                0px 2px 3px rgb(0, 0, 0);
+    margin-top: 50px;
 }
 
 .welcome button {
@@ -197,6 +207,7 @@ body {
 }
 
 .quiz-box header .timer {
+    width:max-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -376,8 +387,8 @@ footer .next-btn:after {
     font-size: 150px;
     padding: 10px 40px;
     border-radius: 7px;
-    background-image: linear-gradient(rgba(9, 65, 248, 0.863), rgb(229, 209, 241), white) ;
-    color:rgb(29, 29, 31);
+    background-image: linear-gradient(rgb(0, 17, 250), rgb(158, 137, 170), rgba(255, 255, 255, 0.664));
+    color:rgb(25, 26, 22);
     width:100%;
 }
 
@@ -419,11 +430,11 @@ footer .next-btn:after {
 
 /* Media queries */
 
-@media screen and (max-width:550px) and (min-width:300px) {
+@media screen and (max-width:550px){
 
     .welcome {
         padding: 20px 10px;
-        width: 280px;
+        width: 90%;
         min-height:200px;
         display: flex;
         flex-direction: column;
@@ -439,12 +450,16 @@ footer .next-btn:after {
         font-size: 17px;
     }
 
+    .welcome .message .page-name{
+        font-size: 22px;
+    }
+
     .welcome button {
         font-size: 15px;
     }
     
     .info-box {
-        width: 280px;
+        width: 90%;
         max-width: 400px;
         border-radius: 8px;
     }
@@ -482,7 +497,7 @@ footer .next-btn:after {
     }
 
     .quiz-box {
-        width: 280px;
+        width: 90%;
     }
 
     .quiz-box header {
@@ -529,7 +544,7 @@ footer .next-btn:after {
     }
 
     .result-box {
-        width: 280px;
+        width: 90%;
     }
 }
 
@@ -548,6 +563,10 @@ footer .next-btn:after {
 
     .welcome .message span {
         font-size: 16px;
+    }
+
+    .welcome .message .page-name{
+        font-size: 20px;
     }
 
     .welcome button {
