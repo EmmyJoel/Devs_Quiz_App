@@ -3,7 +3,7 @@ let questions = [
     {
         number: 1,
         question: "Choose the correct HTML element for the largest heading?",
-        answer: "&lth2&gt",
+        answer: "<h2>",
 
         options: [
             "&ltheader&gt",
@@ -39,7 +39,7 @@ let questions = [
     {
         number: 4,
         question: "How can you make a numbered list?",
-        answer: "&ltol&gt",
+        answer: "<ol>",
 
         options: [
             "&ltdl&gt",
@@ -51,7 +51,7 @@ let questions = [
     {
         number: 5,
         question: "What is the correct HTML for a drop-down list?",
-        answer: "&ltselect&gt",
+        answer: "<select>",
 
         options: [
             "&ltinput type='dropdown'&gt",
@@ -75,7 +75,7 @@ let questions = [
     {
         number: 7,
         question: "Where in an HTML document is the correct place to link to an external style sheet?",
-        answer: "In the &lthead&gt section",
+        answer: "In the <head> section",
 
         options: [
             "In the &ltheading&gt section",
@@ -87,7 +87,7 @@ let questions = [
     {
         number: 8,
         question: "Which of the following HTML tag is used to define an internal styling?",
-        answer: "&ltstyle&gt",
+        answer: "<style>",
 
         options: [
             "&ltcss&gt",
@@ -105,7 +105,7 @@ let questions = [
             "function = myFunction()",
             "function myFunction()",
             "function:myFunction()",
-            "funtion {myFunction}"
+            "function {myFunction}"
         ]
     },
     {
@@ -135,7 +135,7 @@ let questions = [
     {
         number: 12,
         question: "Inside which HTML element do we put the JavaScript?",
-        answer: "&ltscript&gt",
+        answer: "<script>",
 
         options: [
             "&ltscripts&gt",
@@ -159,7 +159,7 @@ let questions = [
     {
         number: 14,
         question: "What is the correct syntax for referring to an external script called 'abc.js'?",
-        answer: "&ltscript src='abc.js'&gt",
+        answer: "<script src='abc.js'>",
 
         options: [
             "&ltscript class='abc.js'&gt",
@@ -190,6 +190,414 @@ let questions = [
             "if i = 5",
             "if(i == 5)",
             "if i = 5 then"
+        ]
+    },
+    {
+        number: 17,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 18,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 19,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 20,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 21,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 22,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 23,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 24,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 25,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 26,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 27,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 28,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 29,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 30,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 31,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 32,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 33,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 34,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 35,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 36,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 37,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 38,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 39,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 40,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 41,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 42,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 43,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 44,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 45,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 46,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 47,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 48,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 49,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        number: 50,
+        question: "",
+        answer: "",
+
+        options: [
+            "",
+            "",
+            "",
+            ""
         ]
     },
 ];

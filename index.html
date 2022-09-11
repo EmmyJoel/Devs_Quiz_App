@@ -12,7 +12,13 @@
 
 <body>
     <!-- start quiz button -->
-    <div class="start-btn"><button onclick="infoActive()">Start Quiz</button></div>
+    <div class="welcome">
+        <div class="message">
+            <p><span>Heyy!!!</span> <br> Welcome to Developers Quiz</p>
+            <p>You're about to test your basic understanding on <br><span>HTML</span>, <span>CSS</span>, and <span>JavaScript</span></p>
+        </div>
+        <button onclick="infoActive()">Take a Ride &#x1F680</button>
+    </div>
 
     <div class="info-box">
         <div class="info-title">
@@ -41,6 +47,7 @@
                 <div class="time-text">Time Left</div>
                 <div class="time">15</div>
             </div>
+            <div class="time-line"></div>
         </header>
 
         <section>
@@ -48,7 +55,7 @@
                 <span>Choose the correct HTML element for the largest heading?</span>
             </div>
             <div class="option-list">
-                <!-- <div class="option">
+                <div class="option">
                     <span>&ltheader&gt</span>
                     <div class="icon tick"><i class="fa-solid fa-check"></i></div>
                 </div>
@@ -62,7 +69,7 @@
                 <div class="option">
                     <span>&lth4&gt</span>
                 </div>
-            </div> -->
+            </div>
         </section>
 
         <!-- Quiz footer -->
@@ -79,15 +86,14 @@
 
     <div class="result-box">
         <div class="icon">
-            <i class="fas fa-crown"></i>
+            <i class="fa-solid fa-award"></i>
         </div>
         <div class="complete-msg">KUDOS, You've completed the quiz!</div>
         <div class="score-msg">
-            And you got <p>5</p> out of <p>16</p>
+            <span>And you got <p></p> out of <p></p></span>
         </div>
         <div class="buttons">
-            <button class="restart">Replay Quiz</button>
-            <button class="quit">Quit Quiz</button>
+            <button class="restart" onclick="quitQuiz()">Go Back</button>
         </div>
     </div>
     <script src="./js/script.js"></script>
